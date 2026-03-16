@@ -1,0 +1,42 @@
+USE sakila;
+
+SHOW TABLES;
+
+-- DESCRIBE
+DESCRIBE film;
+
+
+-- LIST ALL MOVIES WITH rating = PG.
+
+SELECT * FROM film
+WHERE rating = "PG";
+
+
+-- LIST ALL MOVIES WITH DURATION > 120 min
+
+SELECT * FROM film
+WHERE length > 120;
+
+-- LIST ALL CLIENTS FROM store 1.
+
+SELECT * FROM customer
+WHERE store_id = 1;
+
+-- LIST ALL MOVIES RELEASED IN 2006
+
+SELECT * FROM film
+WHERE release_year = 2006;
+
+-- LIST ALL MOVIES WITH THE WORD "LOVE" IN THE TITLE
+
+SELECT * FROM film
+WHERE title LIKE "%LOVE%";
+
+-- LIST ALL PAYMENTS BIGGER THAN 5 DOLARS
+
+SELECT * FROM payment
+WHERE amount > 5
+
+
+-- USE ' ' instead of " "
+-- USE SELECT * WHEN ITS REALLY NECESSARY !
