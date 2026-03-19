@@ -1,0 +1,6 @@
+USE sakila;
+
+SHOW TABLES;
+
+-- DESCRIBE
+DESCRIBE film;
